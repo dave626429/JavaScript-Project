@@ -1,0 +1,52 @@
+<div class="container">
+
+    <div class="d-flex border text-dark p-4 mt-4 relative">
+        <div class="cust-search-fields-container col">
+            <div class="form-group mt-2">
+                <label class="font-weight-normal" for="searchbyname">Cutomer name</label>
+                <input type="text" class="form-control" id="cust-name"  placeholder="Search by name">
+            </div>
+            <div class="form-group mt-2">
+                <label class="font-weight-normal" for="searchbyname">Cutomer email</label>
+                <input type="text" class="form-control" id="cust-email"  placeholder="Search by email">
+            </div>
+            <div class="form-group mt-2">
+                <label class="font-weight-normal" for="searchbyname">Cutomer phone</label>
+                <input type="number" class="form-control" id="cust-phone"  placeholder="Search by phone">
+            </div>
+            <div class="form-group mt-2">
+                <label class="font-weight-normal" for="searchbyname">Cutomer adhaar number</label>
+                <input type="text" class="form-control" id="cust-adhaar"  placeholder="Search by adhaar">
+            </div>
+            <button id="search-btn" class="btn btn-primary mt-2">Search</button>
+        </div>
+        <div class="cust-search-img-container col d-flex justify-content-center  align-items-center">
+            <img class="cust_search-img" src="./images/customer_search.jpg" alt="customer_search.jpg">
+        </div>
+    </div>
+
+    <table class="mt-4 table table-dark table-hover">
+        <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Adhaar</th>
+                  <!-- <th></th> -->
+                </tr>
+        </thead>
+        <tbody id="tbody">
+            <% customers.forEach(customer => { %>
+            <tr class="cust-data">
+                <td ><%= customer.id %></td>
+                <td ><%= customer.name %></td>
+                <td ><%= customer.email %></td>
+                <td ><%= customer.phone?customer.phone:'NA' %></td>
+                <td ><%= customer.adhaar?customer.adhaar:"NA" %></td>
+                <!-- <td class="d-flex align-items-center justify-content-center"><button id="ref-btn" type="button" class="btn btn-danger">Delete</button></td> -->
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+  </div>
