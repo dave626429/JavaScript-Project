@@ -1,0 +1,23 @@
+:root {
+  --background: #eff0f3;
+  --primary: #eff0f3;
+  --secondary: #fffffe;
+  --tertiary: #d9376e;
+  --highlights: #ff8e3c;
+  --button-text: #0d0d0d;
+  --headline: #0d0d0d;
+  --paragraph: #2a2a2a;
+  --button: #ff8e3c;
+}
+
+[dark-theme="dark"] {
+  --background: #0f0e17;
+  --primary: #fffffe;
+  --secondary: #abd444;
+  --tertiary: #d9376e;
+  --highlights: #ff8e3c;
+  --button-text: #fffffe;
+  --headline: #fff;
+  --paragraph: #a7a9be;
+  --button: #ff8e3c;
+}

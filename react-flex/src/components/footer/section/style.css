@@ -1,0 +1,6 @@
+#section {
+  padding: 0 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

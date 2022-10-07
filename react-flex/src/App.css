@@ -1,0 +1,4 @@
+#app {
+  background-color: var(--background);
+  transition: 0.3s;
+}

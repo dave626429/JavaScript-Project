@@ -1,0 +1,6 @@
+#header {
+  display: flex;
+  background-color: var(--tertiary);
+  flex-wrap: wrap;
+  align-items: center;
+}

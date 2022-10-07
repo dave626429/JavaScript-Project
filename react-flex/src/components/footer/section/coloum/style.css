@@ -1,0 +1,19 @@
+#col {
+  /* flex: 1; */
+  min-width: 17.5em;
+  display: flex;
+  justify-content: center;
+}
+
+#col-heading {
+  padding-top: 48px;
+  font-size: var(--headline-1-size);
+  color: var(--headline-1-color);
+}
+
+.col-item {
+  font-size: var(--headline-3-size);
+  color: var(--headline-3-color);
+  padding: 8px;
+  padding-left: 0;
+}

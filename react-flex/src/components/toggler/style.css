@@ -1,0 +1,23 @@
+.container {
+  height: 24px;
+  overflow: hidden;
+  border-radius: 0.5vh;
+}
+
+.mode {
+  cursor: pointer;
+  display: block;
+}
+
+.move-y {
+  transform: translateY(-24px);
+}
+
+.dark-mode {
+  background-color: black;
+  color: #fff;
+}
+.light-mode {
+  background-color: rgb(147, 237, 255);
+  color: rgb(255, 247, 0);
+}

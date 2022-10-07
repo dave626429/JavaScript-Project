@@ -1,0 +1,34 @@
+#button {
+  position: relative;
+  padding: var(--button-padding);
+  background-color: var(--button);
+  display: inline-block;
+  border-radius: var(--button-border-radius);
+  color: var(--button-text);
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.ripple {
+  position: absolute;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: rippleAnimate 1s linear infinite;
+}
+
+@keyframes rippleAnimate {
+  0% {
+    height: 0px;
+    width: 0px;
+    opacity: 0.2;
+  }
+  100% {
+    height: 500px;
+    width: 500px;
+    opacity: 0.2;
+  }
+}

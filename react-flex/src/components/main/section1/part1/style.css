@@ -1,0 +1,20 @@
+#sec-1-part-1::before {
+  content: "";
+  background-image: url(../../../../assets/close-eye-face.svg);
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#sec-1-part-1 {
+  position: relative;
+  background-color: var(--highlights);
+  min-width: 320px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

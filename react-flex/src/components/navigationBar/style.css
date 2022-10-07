@@ -1,0 +1,17 @@
+#navBar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: right;
+}
+
+@media only screen and (max-width: 540px) {
+  #navBar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 720px) {
+  #navBar {
+    justify-content: center;
+  }
+}
